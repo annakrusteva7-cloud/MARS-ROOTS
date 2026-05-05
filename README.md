@@ -14,4 +14,3 @@ MARS-ROOTS is a specialized software architecture designed to manage greenhouse 
 * Language: Python 3.10+ / C++
 * Core: Lightweight Edge-AI (TensorFlow Lite / ONNX)
 * Architecture: Modular Microservices (for easy hardware swapping)
-* 
