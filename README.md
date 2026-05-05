@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo_white.png" width="400" />
+</p>
+
 ## Project Name: MARS-ROOTS v1.0
 Subtitle: Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support Systems.
 ## Executive Summary
