@@ -1,4 +1,4 @@
-pythonclass MarsIrrigationLogic:
+class MarsIrrigationLogic:
     def __init__(self):
         self.water_inventory = 500  # liters
         self.power_level = 100      # battery percentage
