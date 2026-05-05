@@ -1,4 +1,4 @@
-pythonimport time
+import time
 
 class MarsGreenhouseOS:
     def __init__(self):
