@@ -11,7 +11,7 @@ def run_monte_carlo_resilience(iterations=1000):
     for _ in range(iterations):
         # Random failure triggers (Probability based)
         solar_ok = np.random.random() > 0.05  # 5% chance of dust storm
-        pump_ok = np.random.random() > 0.02   # 2% chance of failure
+        pump_ok = np.random.random() > 0.02   # 2% chance of pump failure
         
         if solar_ok and pump_ok:
             success_count += 1
@@ -22,7 +22,8 @@ def run_monte_carlo_resilience(iterations=1000):
     survival_rate = (success_count / iterations) * 100
     return survival_rate, failures
 
-# Тест на симулацията
-rate, stats = run_monte_carlo_resilience()
-print(f"Mission Survival Probability: {rate}%")
-print(f"Failure Analysis: {stats}")
+if __name__ == "__main__":
+    rate, stats = run_monte_carlo_resilience()
+    print(f"--- MARS-ROOTS v4.0 Resilience Report ---")
+    print(f"Mission Survival Probability: {rate}%")
+    print(f"Failure Analysis: {stats}")
