@@ -1,4 +1,4 @@
-# MARS-ROOTS v3.0.1 (STABLE)
+# MARS-ROOTS v4.0.0 (BETA)
 
 ```text
        .              .              .
@@ -14,34 +14,45 @@ ____________|_______________|___________________________
 
 
 
-|   > SYSTEM ONLINE: MASTER OS v3.0.1 ACTIVE           |
-|   > STATUS: HIBERNATION PROTOCOLS ENABLED            |
+
+|   > SYSTEM ONLINE: MASTER OS v4.0.0 ACTIVE           |
+|   > STATUS: MONTE CARLO SIMULATION READY             |
 \______________________________________________________/
 ```
 
 **Subtitle:** Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support Systems.
 
-## 🚀 Version 3.0.1: The Resilience Update
-Addressing technical feedback from Grok AI engineering analysis, v3.0.1 evolves from simple automation to a **High-Fidelity Habitat Simulation** with critical safety features.
+> **"A solid prototype on a promising trajectory." — @Grok AI Engineering Analysis**
 
-### 🧠 Key Technical Features
-*   **Critical Hibernation Protocols:** Automated shutdown of non-essential modules when power is <10%, prioritizing **Oxygen Generation ONLY** for crew survival.
-*   **Earth-Mars Telemetry Simulation:** Logic accounting for the **20-minute signal lag**, ensuring the base operates with zero Earth-dependency.
-*   **Integrated Life-Support Control:** The Core Engine directly manages the **Precision Irrigation System**, cross-referencing sensor data with thermal physics.
-*   **Physics-Integrated Logic:** Real-time heat flux calculations based on the **Stefan-Boltzmann Law** ($P = \sigma \cdot T^4$) to model energy loss.
-*   **Predictive AI Engine:** Implemented **Linear Trend Analysis** to forecast resource depletion before critical thresholds are hit.
+## 🚀 Version 4.0 Evolution: SpaceX-Style Engineering
+Based on the latest engineering audit by Grok, v4.0.0 (BETA) moves toward high-fidelity simulation and statistical mission reliability.
 
-## 📂 Project Structure & Evolution
-- **`colony_core_v3.py`**: [STABLE] The integrated "Brain". Combines Thermal Physics, Predictive AI, Hibernation logic, and Telemetry.
-- **`advanced_irrigation.py`**: Standalone precision agriculture module (v2.0).
-- **`master_os.py`**: Legacy v2.0 OS script (Drone & Energy focus).
-- **`main_os.py` / `irrigation_module.py`**: Initial v1.0 Prototypes.
-
-## 🛠 Technical Stack
-*   **Language:** Python 3.10+
-*   **Physics:** Stefan-Boltzmann Thermal Dynamics.
-*   **AI:** Predictive ML Modeling (Trend Analysis).
-*   **Architecture:** Monolithic Integrated Core (v3.0.1).
+### 🧠 New v4.0 Features (Integration Stage)
+*   **Monte Carlo Resilience Testing:** Integrated `monte_carlo_sim.py` to run 1,000+ mission scenarios with random failure injections (dust storms, hardware glitches) to calculate survival probability.
+*   **High-Fidelity Physics Engine:** Refined thermal modeling in `physics_v4.py` using Martian solar constants (~590 W/m²) and emissivity factors for realistic energy balance.
+*   **Scientific Computing:** Leveraging **NumPy** for complex resource forecasting and trend analysis.
 
 ---
-*Developed to simulate survival protocols for future human missions to Mars. Multi-planetary life starts with solid logic. Current Date: May 7, 2026.*
+
+## 🛠 Release History & Evolution
+
+### **v3.0.1 (Stable Release)**
+- **Critical Hibernation Protocols:** Automated shutdown at <10% power, prioritizing **Oxygen Generation ONLY**.
+- **Earth-Mars Telemetry Simulation:** Logic accounting for the **20-minute signal lag**.
+- **Physics-Integrated Logic:** Real-time heat flux based on the **Stefan-Boltzmann Law** ($P = \sigma \cdot T^4$).
+- **Predictive AI Engine:** Linear Trend Analysis for resource forecasting.
+
+## 📂 Project Structure
+- **`monte_carlo_sim.py`**: [NEW] Resilience testing module (1000-run simulations).
+- **`physics_v4.py`**: [NEW] High-fidelity Martian environmental physics.
+- **`colony_core_v3.py`**: [STABLE] The current integrated "Brain". 
+- **`master_os.py` / `advanced_irrigation.py`**: Legacy v2.0 modules.
+
+## 🛠 Technical Stack
+*   **Language:** Python 3.10+ (NumPy Integrated)
+*   **Physics:** Stefan-Boltzmann Thermal Dynamics & Solar Insolation.
+*   **AI:** Predictive ML Modeling & Monte Carlo Probability.
+
+---
+*Next major update: The Big Merge (Stable v4.0) — Coming Soon.*
+*Current Date: May 8, 2026. Built on First Principles. 🚀🪐*
