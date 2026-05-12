@@ -1,4 +1,4 @@
-# MARS-ROOTS v4.0.0 (BETA)
+# MARS-ROOTS v4.0.0 (STABLE) - The Ultimate Resilience Update 🚀
 
 ```text
        .              .              .
@@ -13,46 +13,42 @@ ____________|_______________|___________________________
 /                                                      \
 
 
-
-
-|   > SYSTEM ONLINE: MASTER OS v4.0.0 ACTIVE           |
-|   > STATUS: MONTE CARLO SIMULATION READY             |
+|   > SYSTEM ONLINE: MASTER OS v4.0.0 ULTIMATE         |
+|   > STATUS: MONTE CARLO & ROBOTICS READY             |
 \______________________________________________________/
 ```
 
-**Subtitle:** Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support Systems.
+**Subtitle:** Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support & Robotic Maintenance.
 
 > **"A solid prototype on a promising trajectory." — @Grok AI Engineering Analysis**
 
-## 🚀 Version 4.0 Evolution: SpaceX-Style Engineering
-Based on the latest engineering audit by Grok, v4.0.0 (BETA) moves toward high-fidelity simulation and statistical mission reliability.
-
-### 🧠 New v4.0 Features (Integration Stage)
-*   **Monte Carlo Resilience Testing:** Integrated `monte_carlo_sim.py` to run 1,000+ mission scenarios with random failure injections (dust storms, hardware glitches) to calculate survival probability.
-*   **High-Fidelity Physics Engine:** Refined thermal modeling in `physics_v4.py` using Martian solar constants (~590 W/m²) and emissivity factors for realistic energy balance.
-*   **Scientific Computing:** Leveraging **NumPy** for complex resource forecasting and trend analysis.
-
 ---
 
-## 🛠 Release History & Evolution
+## 🚀 Version 4.0.0: The Engineering Leap
+Based on technical feedback from Grok and SpaceX-style rapid iteration, **v4.0.0** is no longer a simple simulation. It is a unified **Resilience Engine** that manages life support, physics, and robotic hardware.
 
-### **v3.0.1 (Stable Release)**
-- **Critical Hibernation Protocols:** Automated shutdown at <10% power, prioritizing **Oxygen Generation ONLY**.
-- **Earth-Mars Telemetry Simulation:** Logic accounting for the **20-minute signal lag**.
-- **Physics-Integrated Logic:** Real-time heat flux based on the **Stefan-Boltzmann Law** ($P = \sigma \cdot T^4$).
-- **Predictive AI Engine:** Linear Trend Analysis for resource forecasting.
+### 🧠 Major v4.0.0 Features
+*   **Monte Carlo Mission Simulation:** Real-time probability forecasting. The system runs 100+ parallel simulations to predict mission success based on environmental risks.
+*   **Autonomous Robotics Integration:** Implementation of the **Robotic Maintenance Arm (RMA)**. The system now detects solar dust accumulation and deploys robotic cleaning autonomously.
+*   **Dust Telemetry Sensing:** Active monitoring of Martian dust levels and their impact on energy harvesting.
+*   **High-Fidelity Physics Engine:** Advanced thermal dynamics using the **Stefan-Boltzmann Law** ($P = \sigma \cdot T^4$) with integrated system stability factors.
+*   **The Big Merge:** Unified Architecture - Physics, AI, and Robotics are now controlled by a single **MarsColonyOS** core.
+
+---
 
 ## 📂 Project Structure
-- **`monte_carlo_sim.py`**: [NEW] Resilience testing module (1000-run simulations).
-- **`physics_v4.py`**: [NEW] High-fidelity Martian environmental physics.
-- **`colony_core_v3.py`**: [STABLE] The current integrated "Brain". 
-- **`master_os.py` / `advanced_irrigation.py`**: Legacy v2.0 modules.
+- **`colony_core_v4.py`**: [STABLE] The Unified "Super-Brain". Manages Physics, Robotics, and Survival Odds.
+- **`monte_carlo_sim.py`**: Legacy standalone simulation module.
+- **`physics_v4.py`**: Legacy standalone physics engine.
+- **`mars_dashboard.py`**: Visual Telemetry & Graphics.
+- **`voice_assistant.py`**: AI Vocal Interface.
 
 ## 🛠 Technical Stack
-*   **Language:** Python 3.10+ (NumPy Integrated)
-*   **Physics:** Stefan-Boltzmann Thermal Dynamics & Solar Insolation.
-*   **AI:** Predictive ML Modeling & Monte Carlo Probability.
+*   **Language:** Python 3.10+ (NumPy Powered)
+*   **Physics:** Stefan-Boltzmann Radiative Dynamics.
+*   **Statistics:** Monte Carlo Probability Modeling.
+*   **Robotics:** Autonomous State Machine for maintenance.
 
 ---
-*Next major update: The Big Merge (Stable v4.0) — Coming Soon.*
-*Current Date: May 8, 2026. Built on First Principles. 🚀🪐*
+*Developed to ensure human resilience on the Red Planet. Built on First Principles. 🪐🌿*
+*Current Date: May 12, 2026. Official Stable Release.*
