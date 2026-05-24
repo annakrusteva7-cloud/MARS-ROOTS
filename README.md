@@ -1,4 +1,4 @@
-# MARS-ROOTS v4.0.0 (STABLE) - The Ultimate Resilience Update 🚀
+# MARS-ROOTS v5.0.0 (STABLE) - Production-Grade Resilience OS 🚀
 
 ```text
        .              .              .
@@ -13,44 +13,40 @@ ____________|_______________|___________________________
 /                                                      \
 
 
-
-
-|   > SYSTEM ONLINE: MASTER OS v4.0.0 ULTIMATE         |
-|   > STATUS: PRODUCTION-GRADE RESILIENCE DEPLOYED     |
+|   > SYSTEM ONLINE: MASTER OS v5.0.0 PRODUCTION       |
+|   > STATUS: VECTORIZED RESILIENCE DEPLOYED           |
 \______________________________________________________/
 ```
 
-**Subtitle:** Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support & Robotic Maintenance.
-
-> **"A solid prototype on a promising trajectory." — @Grok AI Engineering Analysis**
+**Subtitle:** Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support, Power Grid Management & Robotic Infrastructure.
 
 ---
 
-## 🚀 Version 4.0.0: The Engineering Leap
-Based on technical feedback from Grok and SpaceX-style rapid iteration, **v4.0.0** is no longer a simple simulation [INDEX]. It is a unified **Resilience Engine** that manages life support, physics, and robotic hardware.
+## 🚀 Version 5.0.0: The Production-Grade Upgrade
+Based on rigorous feedback from Grok architecture audits, **v5.0.0** transitions the core into a high-performance, containerized environment optimized for edge deployment on space hardware.
 
-### 🧠 Major v4.0.0 Features
-*   **Monte Carlo Mission Simulation:** Real-time probability forecasting [INDEX]. The system runs 100+ parallel simulations to predict mission success based on environmental risks.
-*   **Autonomous Robotics Integration:** Implementation of the **Robotic Maintenance Arm (RMA)**. The system now detects solar dust accumulation and deploys robotic cleaning autonomously.
-*   **Dust Telemetry Sensing:** Active monitoring of Martian dust levels and their impact on energy harvesting.
-*   **High-Fidelity Physics Engine:** Advanced thermal dynamics using the **Stefan-Boltzmann Law** ($P = \sigma \cdot T^4$) with integrated system stability factors.
-*   **The Big Merge:** Unified Architecture - Physics, AI, and Robotics are now controlled by a single **MarsColonyOS** core.
+### 🧠 Advanced v5.0.0 Features
+*   **Vectorized Monte Carlo Logic:** Re-engineered using **NumPy** matrix operations, scaling risk assessment to 1000+ parallel runs with sub-millisecond edge latency.
+*   **Dynamic Power Grid Budgeting:** Active tracking of solar power generation versus hardware consumption. The Robotic Maintenance Arm now draws measurable battery loads.
+*   **Diurnal Martian Climate Cycle:** Real-time simulation of radical day/night temperature swings (-140°C to +20°C) impacting Stefan-Boltzmann thermal flux equations.
+*   **Docker Containerization:** Full infrastructure deployment packaging using a native `Dockerfile` for standardized cross-platform environment builds.
+*   **Unified Super-Brain Integration:** Complete orchestration managed under the optimized `MarsProductionOS` class.
 
 ---
 
 ## 📂 Project Structure
-- **`colony_core_v4.py`**: [STABLE] The Unified "Super-Brain". Manages Physics, Robotics, and Survival Odds.
-- **`monte_carlo_sim.py`**: Legacy standalone simulation module.
-- **`physics_v4.py`**: Legacy standalone physics engine.
+- **`colony_core_v5.py`**: [LATEST STABLE] Core OS. Manages Climate, Power Grid, Vectorized AI, and Robotics.
+- **`Dockerfile`**: Container engine configuration for standard hardware deployment.
+- **`colony_core_v4.py`**: Legacy unified validation state machine.
 - **`mars_dashboard.py`**: Visual Telemetry & Graphics.
 - **`voice_assistant.py`**: AI Vocal Interface.
 
 ## 🛠 Technical Stack
-*   **Language:** Python 3.10+ (NumPy Powered)
-*   **Physics:** Stefan-Boltzmann Radiative Dynamics.
-*   **Statistics:** Monte Carlo Probability Modeling [INDEX].
-*   **Robotics:** Autonomous State Machine for maintenance.
+*   **Language:** Python 3.10+ (NumPy Vectorized Core)
+*   **Infrastructure:** Docker (Containerized Deployment)
+*   **Physics:** Diurnal Stefan-Boltzmann Thermodynamics
+*   **Statistics:** High-Performance Probabilistic Risk Modeling
 
 ---
 *Developed to ensure human resilience on the Red Planet. Built on First Principles. 🪐🌿*
-*Current Date: May 22, 2026. Official Stable Release.*
+*Current Date: May 24, 2026. Official Production Release.*
