@@ -1,7 +1,7 @@
 """
 MARS-ROOTS v5.1.0 (STABLE) - Production-Grade Resilience OS
 Features: Deterministic Vectorized Monte Carlo, Climate Thermal Heaters & Power Grid.
-Author: Anna Krasteva | Core Engine v5.1
+Author: Anna Krasteva | Core Engine v5.1.0 STABLE
 """
 
 import random
