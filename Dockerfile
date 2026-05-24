@@ -1,14 +1,12 @@
-# Lightweight Python edge infrastructure
-FROM python:3.10-slim
+FROM python:3.12-slim
 
-# Set system working matrix
+# Non-root user
+RUN useradd -m -u 1000 marsuser
 WORKDIR /app
+COPY --chown=marsuser:marsuser . .
 
-# Install computational libraries
-RUN pip install numpy
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy core infrastructure
-COPY colony_core_v5.py .
+USER marsuser
 
-# Execute the Resilience Core Engine
-CMD ["python", "colony_core_v5.py"]
+CMD ["python", "run_simulation.py"]
