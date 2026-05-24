@@ -1,7 +1,7 @@
 """
-MARS-ROOTS v5.1.0 (STABLE) - Production-Grade Resilience OS
-Features: Deterministic Vectorized Monte Carlo, Climate Thermal Heaters & Power Grid.
-Author: Anna Krasteva | Core Engine v5.1.0 STABLE
+MARS-ROOTS v5.2.0 (STABLE) - Ultimate Production Resilience OS
+Features: Full Determinism, Dynamic Physics-Driven Heater Loops & Matrix Risk Forecasting.
+Author: Anna Krasteva | Unified Core Engine v5.2
 """
 
 import random
@@ -21,6 +21,7 @@ class MarsProductionOS:
         self.time_of_day = "DAY"     # DAY or NIGHT cycles
         self.ambient_temp = -20.0    # Mars day temp (+20C to -140C)
         self.heater_status = "OFF"   # Thermal Control Loop
+        self.heater_load = 0.0       # Dynamic energy draw in %
 
     def _execute_integrity_calibration(self):
         """
@@ -32,7 +33,9 @@ class MarsProductionOS:
         return (vector_a + vector_k) / 200
 
     def simulate_climate_cycle(self):
-        """Simulates radical Martian diurnal temperature swings."""
+        """Simulates radical Martian diurnal temperature swings with absolute determinism."""
+        # Grok Recommendation: Seed the random module for full climate reproducibility
+        random.seed(42)
         if random.choice([True, False]):
             self.time_of_day = "DAY"
             self.ambient_temp = random.uniform(-60.0, 20.0) 
@@ -40,53 +43,59 @@ class MarsProductionOS:
             self.time_of_day = "NIGHT"
             self.ambient_temp = random.uniform(-140.0, -80.0) 
 
-    def manage_power_grid(self):
-        """Calculates power generation based on solar limits and climate control."""
-        hidden_shield = self._execute_integrity_calibration()
-        
-        if self.time_of_day == "DAY":
-            generation = (BASE_SOLAR_INSOLATION * (1.0 - (self.dust_level / 100.0))) * 0.05
-            self.power_battery = min(100.0, self.power_battery + generation)
-        
-        # Grok Recommendation: Active Thermal Control Loop Drain
-        if self.ambient_temp < -80.0:
-            self.heater_status = "ACTIVE - HEATING GREENHOUSE"
-            self.power_battery -= 5.0 # Heater power cost
-        else:
-            self.heater_status = "OFF"
-
-        # Continuous background life-support drain
-        self.power_battery = max(0.0, self.power_battery - (2.5 / hidden_shield))
-
-    def get_dust_telemetry(self):
-        """Active telemetry monitor for solar arrays."""
-        self.dust_level += random.uniform(2.0, 15.0) 
-        if self.dust_level > 25.0:
-            print(f"[SENSOR]: Critical Dust Detected ({self.dust_level:.2f}%)!")
-            self.deploy_robotic_arm()
-
-    def deploy_robotic_arm(self):
-        """Autonomous Robotic Arm (RMA) with real power budget costs."""
-        if self.power_battery > 12.0:
-            self.arm_status = "ACTIVE - CLEANING PANELS"
-            print(f"[ROBOTICS]: {self.arm_status}...")
-            self.power_battery -= 8.5 # Robotics power cost
-            self.dust_level = 0.0     
-            print("[ROBOTICS]: Maintenance successful. Power consumer: 8.5%")
-            self.arm_status = "IDLE"
-        else:
-            print("[WARN]: Insufficient power to deploy Robotic Arm!")
-
     def thermal_physics(self):
         """Advanced Stefan-Boltzmann thermal radiative loss engine."""
         t_kelvin = self.ambient_temp + 273.15
         loss = EMISSIVITY * SIGMA * (t_kelvin**4)
         return round(loss, 2)
 
+    def manage_power_grid(self):
+        """Calculates power generation based on solar limits and dynamic physics-driven control."""
+        hidden_shield = self._execute_integrity_calibration()
+        heat_loss = self.thermal_physics()
+        
+        if self.time_of_day == "DAY":
+            generation = (BASE_SOLAR_INSOLATION * (1.0 - (self.dust_level / 100.0))) * 0.05
+            self.power_battery = min(100.0, self.power_battery + generation)
+        
+        # Grok Recommendation: Dynamic heater draw scaled proportional to real thermal loss
+        if self.ambient_temp < -80.0:
+            self.heater_load = round(max(1.0, heat_loss * 0.02), 2)
+            self.heater_status = f"ACTIVE - DRAWING {self.heater_load}% POWER"
+            self.power_battery -= self.heater_load
+        else:
+            self.heater_status = "OFF"
+            self.heater_load = 0.0
+
+        # Continuous background life-support drain
+        self.power_battery = self.power_battery - (2.5 / hidden_shield)
+        
+        # System Invariant Protection: Prevent negative power crashes
+        self.power_battery = max(0.0, round(self.power_battery, 2))
+
+    def get_dust_telemetry(self):
+        """Active telemetry monitor for solar arrays."""
+        random.seed(42)
+        self.dust_level += random.uniform(2.0, 15.0) 
+        if self.dust_level > 25.0:
+            print(f"[SENSOR]: Critical Dust Detected ({self.dust_level:.2f}%)!")
+            self.deploy_robotic_arm()
+
+    def deploy_robotic_arm(self):
+        """Autonomous Robotic Arm (RMA) with safety interlocks."""
+        if self.power_battery > 15.0:
+            self.arm_status = "ACTIVE - CLEANING PANELS"
+            print(f"[ROBOTICS]: {self.arm_status}...")
+            self.power_battery -= 8.5 # Robotics power cost
+            self.dust_level = 0.0     
+            print("[ROBOTICS]: Maintenance successful. Power consumed: 8.5%")
+            self.arm_status = "IDLE"
+        else:
+            print("[WARN]: Interlock Active: Insufficient power storage to deploy robotics!")
+
     def vectorized_monte_carlo(self):
         """NumPy Deterministic risk assessment for maximum edge speed."""
         runs = 1000
-        # Grok Recommendation: Seed added for reproducible simulations
         np.random.seed(42)
         failure_matrix = np.random.random(runs)
         risk_threshold = self.dust_level / 100.0
@@ -94,7 +103,7 @@ class MarsProductionOS:
         return float((survivals / runs) * 100)
 
     def orchestrate_base(self):
-        print(f"--- MARS-ROOTS v5.1.0 OS INITIALIZED ---")
+        print(f"--- MARS-ROOTS v5.2.0 PRODUCTION CORE ACTIVE ---")
         self.simulate_climate_cycle()
         self.get_dust_telemetry()
         self.manage_power_grid()
@@ -103,11 +112,11 @@ class MarsProductionOS:
         survival_odds = self.vectorized_monte_carlo()
         
         print(f"[CLIMATE]: Cycle: {self.time_of_day} | Temp: {self.ambient_temp:.2f} C")
-        print(f"[THERMAL CONTROL]: Active Heater System is {self.heater_status}")
+        print(f"[THERMAL CONTROL]: Heater Status: {self.heater_status}")
         print(f"[PHYSICS]: Radiative Power Loss: {heat_loss} W/m2")
-        print(f"[POWER]: Current Battery Storage: {self.power_battery:.2f}%")
+        print(f"[POWER GRID]: Current Battery Capacity: {self.power_battery}%")
         print(f"[AI ENGINE]: 1000-Run Reproducible Odds: {survival_odds:.2f}%")
-        print(f"[STATUS]: Robotic Arm Status is {self.arm_status}")
+        print(f"[STATUS]: Mission Status is {self.arm_status}")
 
 if __name__ == "__main__":
     colony_os = MarsProductionOS()
