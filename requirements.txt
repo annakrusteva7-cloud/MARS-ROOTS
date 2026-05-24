@@ -1,4 +1,2 @@
-streamlit
-pandas
 numpy
-pyttsx3
+pytest
