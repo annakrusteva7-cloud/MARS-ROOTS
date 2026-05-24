@@ -1,12 +1,21 @@
 """
-MARS-ROOTS v5.2.0 (STABLE) - Ultimate Production Resilience OS
-Features: Full Determinism, Dynamic Physics-Driven Heater Loops & Matrix Risk Forecasting.
-Author: Anna Krasteva | Unified Core Engine v5.2
+MARS-ROOTS v5.3.0 (STABLE) - Enterprise Resilience OS
+Features: Multi-Sol Simulation, Structured Telemetry Logging, and Absolute Determinism.
+Author: Anna Krasteva | Unified Core Engine v5.3
 """
 
 import random
 import time
+import logging
 import numpy as np
+
+# --- SYSTEM LOGGING CONFIGURATION (Grok Recommendation) ---
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger("MarsOS")
 
 # --- ASTROPHYSICS CONSTANTS ---
 SIGMA = 5.67e-8              # Stefan-Boltzmann Constant
@@ -22,6 +31,10 @@ class MarsProductionOS:
         self.ambient_temp = -20.0    # Mars day temp (+20C to -140C)
         self.heater_status = "OFF"   # Thermal Control Loop
         self.heater_load = 0.0       # Dynamic energy draw in %
+        
+        # Absolute determinism initialization
+        random.seed(42)
+        np.random.seed(42)
 
     def _execute_integrity_calibration(self):
         """
@@ -34,8 +47,6 @@ class MarsProductionOS:
 
     def simulate_climate_cycle(self):
         """Simulates radical Martian diurnal temperature swings with absolute determinism."""
-        # Grok Recommendation: Seed the random module for full climate reproducibility
-        random.seed(42)
         if random.choice([True, False]):
             self.time_of_day = "DAY"
             self.ambient_temp = random.uniform(-60.0, 20.0) 
@@ -58,10 +69,10 @@ class MarsProductionOS:
             generation = (BASE_SOLAR_INSOLATION * (1.0 - (self.dust_level / 100.0))) * 0.05
             self.power_battery = min(100.0, self.power_battery + generation)
         
-        # Grok Recommendation: Dynamic heater draw scaled proportional to real thermal loss
+        # Dynamic heater draw scaled proportional to real thermal loss
         if self.ambient_temp < -80.0:
             self.heater_load = round(max(1.0, heat_loss * 0.02), 2)
-            self.heater_status = f"ACTIVE - DRAWING {self.heater_load}% POWER"
+            self.heater_status = f"ACTIVE (LOAD: {self.heater_load}%)"
             self.power_battery -= self.heater_load
         else:
             self.heater_status = "OFF"
@@ -74,50 +85,60 @@ class MarsProductionOS:
         self.power_battery = max(0.0, round(self.power_battery, 2))
 
     def get_dust_telemetry(self):
-        """Active telemetry monitor for solar arrays."""
-        random.seed(42)
-        self.dust_level += random.uniform(2.0, 15.0) 
+        """Active telemetry monitor for solar arrays with deterministic buildup."""
+        self.dust_level += random.uniform(2.0, 8.0) # Realistic incremental dust
         if self.dust_level > 25.0:
-            print(f"[SENSOR]: Critical Dust Detected ({self.dust_level:.2f}%)!")
+            logger.warning(f"Critical Dust Threshold Breached: {self.dust_level:.2f}%")
             self.deploy_robotic_arm()
 
     def deploy_robotic_arm(self):
         """Autonomous Robotic Arm (RMA) with safety interlocks."""
         if self.power_battery > 15.0:
             self.arm_status = "ACTIVE - CLEANING PANELS"
-            print(f"[ROBOTICS]: {self.arm_status}...")
-            self.power_battery -= 8.5 # Robotics power cost
+            logger.info("Deploying Autonomous Robotic Maintenance Arm (RMA)...")
+            self.power_battery -= 8.5 
             self.dust_level = 0.0     
-            print("[ROBOTICS]: Maintenance successful. Power consumed: 8.5%")
+            logger.info("RMA Maintenance Cycle successful. Energy consumed: 8.5%")
             self.arm_status = "IDLE"
         else:
-            print("[WARN]: Interlock Active: Insufficient power storage to deploy robotics!")
+            logger.error("Interlock Active: Insufficient power storage to deploy robotics!")
 
     def vectorized_monte_carlo(self):
         """NumPy Deterministic risk assessment for maximum edge speed."""
         runs = 1000
-        np.random.seed(42)
         failure_matrix = np.random.random(runs)
         risk_threshold = self.dust_level / 100.0
         survivals = np.sum(failure_matrix > risk_threshold)
         return float((survivals / runs) * 100)
 
-    def orchestrate_base(self):
-        print(f"--- MARS-ROOTS v5.2.0 PRODUCTION CORE ACTIVE ---")
-        self.simulate_climate_cycle()
-        self.get_dust_telemetry()
-        self.manage_power_grid()
+    def run_multi_sol_simulation(self, total_sols=5):
+        """Grok Recommendation: Simulates multiple Martian Sols to observe long-term stability."""
+        logger.info(f"--- INITIALIZING MARS-ROOTS v5.3.0 CORE SIMULATION ({total_sols} SOLS) ---")
         
-        heat_loss = self.thermal_physics()
-        survival_odds = self.vectorized_monte_carlo()
-        
-        print(f"[CLIMATE]: Cycle: {self.time_of_day} | Temp: {self.ambient_temp:.2f} C")
-        print(f"[THERMAL CONTROL]: Heater Status: {self.heater_status}")
-        print(f"[PHYSICS]: Radiative Power Loss: {heat_loss} W/m2")
-        print(f"[POWER GRID]: Current Battery Capacity: {self.power_battery}%")
-        print(f"[AI ENGINE]: 1000-Run Reproducible Odds: {survival_odds:.2f}%")
-        print(f"[STATUS]: Mission Status is {self.arm_status}")
+        for sol in range(1, total_sols + 1):
+            logger.info(f"== STARTING MARTIAN SOL {sol} / {total_sols} ==")
+            
+            # Run Day Cycle
+            self.time_of_day = "DAY"
+            self.ambient_temp = random.uniform(-60.0, 20.0)
+            self.get_dust_telemetry()
+            self.manage_power_grid()
+            heat_loss = self.thermal_physics()
+            survival_odds = self.vectorized_monte_carlo()
+            
+            logger.info(f"[SOL {sol} DAY] Temp: {self.ambient_temp:.2f}C | Physics Loss: {heat_loss} W/m2 | Battery: {self.power_battery}% | Survival Odds: {survival_odds:.2f}%")
+            
+            # Run Night Cycle
+            self.time_of_day = "NIGHT"
+            self.ambient_temp = random.uniform(-140.0, -80.0)
+            self.manage_power_grid()
+            heat_loss = self.thermal_physics()
+            
+            logger.info(f"[SOL {sol} NIGHT] Temp: {self.ambient_temp:.2f}C | Heater: {self.heater_status} | Battery: {self.power_battery}%")
+            time.sleep(0.1) # Brief step latency
+            
+        logger.info(f"--- MULTI-SOL SIMULATION COMPLETE. FINAL BATTERY CAPACITY: {self.power_battery}% ---")
 
 if __name__ == "__main__":
     colony_os = MarsProductionOS()
-    colony_os.orchestrate_base()
+    colony_os.run_multi_sol_simulation(total_sols=5)
