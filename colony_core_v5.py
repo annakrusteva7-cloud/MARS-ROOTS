@@ -1,7 +1,7 @@
 """
 MARS-ROOTS v5.3.0 (STABLE) - Enterprise Resilience OS
 Features: Multi-Sol Simulation, Structured Telemetry Logging, and Absolute Determinism.
-Author: Anna Krasteva | Unified Core Engine v5.3
+Author: Anna Krasteva | Unified Core Engine v5.3.0 STABLE
 """
 
 import random
