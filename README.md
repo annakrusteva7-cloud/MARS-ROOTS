@@ -1,4 +1,4 @@
-# MARS-ROOTS v5.3.0 (STABLE) - Enterprise Resilience OS 🚀
+# MARS-ROOTS v6.0.0 (FLIGHT-READY) - Modular Micro-OS 🚀
 
 ```text
        .              .              .
@@ -14,39 +14,43 @@ ____________|_______________|___________________________
 
 
 
-|   > SYSTEM ONLINE: MASTER OS v5.3.0 ENTERPRISE       |
-|   > STATUS: MULTI-SOL TELEMETRY LOGGING ENGAGED      |
+|   > SYSTEM ONLINE: MASTER OS v6.0.0 DECENTRALIZED    |
+|   > STATUS: MODULAR FLIGHT ARCHITECTURE ENGAGED      |
 \______________________________________________________/
 ```
 
-**Subtitle:** Autonomous Edge-AI Operating System for Extra-Planetary Bio-Regenerative Life Support, Multi-Sol Power Grids & Proportional Physics Heaters.
+**Subtitle:** Hardened, Decentralized Edge Operating System Architecture for Extra-Planetary Bio-Regenerative Habitats, Automated Irrigation, and Multi-Node Resource Sharing.
 
 ---
 
-## 🚀 Version 5.3.0: The Enterprise-Grade Leap
-Based on advanced technical reviews from Grok production architecture audits, **v5.3.0** transitions the system into an enterprise-grade analog simulator capable of continuous tracking over multiple Martian days.
+## 🚀 Version 6.0.0: The Flight-Ready Modular Overhaul
+Following advanced production audits from Grok, **v6.0.0** completely breaks down the monolithic system core into a highly efficient, distributed network of independent Python modules. This prevents single points of failure and mimics actual flight-software infrastructure.
 
-### 🧠 Production Features in v5.3.0
-*   **Multi-Sol Continuous Simulation:** Advanced orchestration looping running full day/night cycles over 5 consecutive Martian Sols to track cumulative battery drains and long-term base stability.
-*   **Structured Telemetry Logging:** Re-engineered core observability using the standard Python `logging` module. Replaced basic print statements with structured, ground-control ready warning/error logs.
-*   **Proportional Physics-Driven Heaters:** Fully integrated Stefan-Boltzmann radiative loss feedback. Greenhouse heater power consumption scales dynamically proportional to real-time temperature drops.
-*   **Absolute System Determinism:** Synchronized multi-module cryptographic seeding (`random.seed(42)` & `np.random.seed(42)`) ensuring 100% identical outputs for verification and debugging.
-*   **System Invariant Safeguards:** Programmatic boundary interlocks and hardware clamps protecting the core battery framework from negative energy memory crashes.
-
----
-
-## 📂 Project Structure
-- **`colony_core_v5.py`**: [LATEST STABLE] Core Enterprise OS. Manages Multi-Sol Physics, Structured Logs, and Matrix Risk.
-- **`Dockerfile`**: Native container configuration for deployment standard.
-- **`mars_dashboard.py`**: Visual Telemetry UI & Dashboard.
-- **`voice_assistant.py`**: AI Vocal Interface.
-
-## 🛠 Technical Stack
-*   **Language:** Python 3.10+ (NumPy Vectorized Matrix Core)
-*   **Infrastructure:** Docker Packaging / Structured Logging
-*   **Physics:** Proportional Stefan-Boltzmann Thermodynamics
-*   **Statistics:** Deterministic Multi-Sol Risk Modeling
+### 🧠 Advanced v6.0.0 Architectural Upgrades
+*   **Decentralized Multi-Module Design:** The system is no longer a single script. It is orchestrated across specialized modules handling configuration, resource networks, and biomonitoring independently.
+*   **Multi-Habitat Resource Sharing:** Built-in network logic allowing up to 3 separate Martian habitats to autonomously balance and transfer energy loads to prevent colony blackouts.
+*   **Bio-Regenerative Crop Automation:** Integrated real-time soil moisture monitoring, automated water valve telemetry, and crop biomass tracking tied directly to power grids and climate extremes.
+*   **Centralized State Persistence:** Full telemetry and hardware calibration criteria automatically export to a `mars_state.json` matrix at the end of every simulation run.
+*   **Automated Validation Suite:** Dedicated unit-testing layer checking power conservation invariants and matrix determinism.
+*   **Hardened Non-Root Containerization:** Upgraded security layer using a non-privileged `marsuser` inside the execution engine.
 
 ---
-*Developed to ensure human resilience on the Red Planet. Built on First Principles. 🪐🌿*
-*Current Date: May 24, 2026. Official Enterprise Release.*
+
+## 📂 Project Architecture Mapping
+The system infrastructure is now organized as follows:
+- **`run_simulation.py`**: The main execution gateway and simulation gateway loop.
+- **`core_os.py`**: The main environmental engine handling thermodynamics and power limits.
+- **`mars_config.py`**: Centralized parameters and telemetry persistence layer.
+- **`habitat_network.py`**: Multi-node energy balancing and resource grid sharing logic.
+- **`crop_biomass.py`**: Bio-regenerative growth algorithms and irrigation controls.
+- **`tests/test_mars_os.py`**: Automated validation scripts for deterministic and safety criteria.
+- **`Dockerfile`**: Hardened edge-container definition with isolated process user execution limits.
+
+## 🛠 Technical Stack & Dependencies
+*   **Core:** Python 3.12+ (Distributed Matrix Logic)
+*   **Libraries:** NumPy (Vectorized Risk Matrices), PyTest (Validation)
+*   **Infrastructure:** Hardened Docker Environment (Non-Root UID 1000)
+
+---
+*Forged on First Principles to secure human life on Mars. 🪐🌿*
+*Official Modular Flight-Ready Stable Release.*
